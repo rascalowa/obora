@@ -11,10 +11,10 @@
         <div class="container">
             <div class="jumbotron">
                 <h1>Let's have FUN!</h1>
-                <button id="btn1">#btn1</button>
-                <button id="btn2">#btn2</button>
-                <button id="btn3">#btn3</button>
-                <button id="btn4">#btn4</button>
+                <button class="panel-button" data-panelid="panel1">#btn1</button>
+                <button class="panel-button" data-panelid="panel2">#btn2</button>
+                <button class="panel-button" data-panelid="panel3">#btn3</button>
+                <button class="panel-button" data-panelid="panel4">#btn4</button>
             </div><br>
             <div class="row">
                 <div class="col-xs-3">
@@ -60,8 +60,14 @@
         <script src=jquery.js></script>
         <script>
             $(document).ready(function(){
+                var content = "My New Content";
 
-$("#panel1").hide(1000).show(3000).slideDown(5000).slideToggle(2000);
+$(".panel-button").on("click", function(){
+var panelId = $(this).attr("data-panelid");
+$("#"+panelId).slideToggle(1000);
+$("#"+panelId+" .panel-body").html(content);
+});
+
 });
 
         </script>
