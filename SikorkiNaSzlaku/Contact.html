@@ -1,4 +1,4 @@
-ls<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -20,13 +20,25 @@ ls<!DOCTYPE html>
             </nav>
             </header>
         <main>
-            <p>SEND E-MAIL</p>
-            <form class="contact-form" action="contactform.php" method=post">
-            <input  type=text name="name" placeholder="Full name"><br>
-            <input  type=text name="mail" placeholder="Your e-mail adress"><br>
-            <input  type=text name="subject" placeholder="Subject"><br>
-            <textarea name=message placeholder="Message"></textarea><br>
+            <h2>SEND E-MAIL</h2>
+            <form class="contact-form" action="contactform.php" method="post">
+
+            <input  type=text name="name" placeholder="Full name">
+            <p>What is your full name?</p>
+
+            <input  type=text name="mail" placeholder="Your e-mail adress">
+            <p>E-mail must be valid address, e.g. me@domain.com</p>
+
+            <input  type=text name="phone" placeholder="Your phone number - optional">
+            <p>Hopefully you have polish number:)</p>
+            
+            <input  type=text name="subject" placeholder="Subject">
+            <p>Tell us more!</p>
+
+            <textarea name=message placeholder="Message"></textarea>
             <button type="submit" name="submit">Send</button>
+
         </main>
+        <script src="main.js"></script>
     </body>
 </html>
