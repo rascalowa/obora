@@ -6,37 +6,47 @@
 
 header {
   padding: 15px 15px 0 15px;
-  text-align: center;
+  min-height: 35px;
+  max-height: 5%;
+  display: flex;
 }
 
 header .mobile {
   display: none;
 }
 
-header h1 {
-  display: inline;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
 }
 
 nav ul {
-  display: inline;
+  margin-left: 2em;
+  display: flex;
 }
 
-nav ul li {
-  padding: 5px 10px;
-  display: inline;
+nav li {
+  padding: 5px 0 5px 20px;
 }
 
-.high {
-  color: #ddd;
-}
-
-nav ul li a {
+nav a {
   text-decoration: none;
-  color: #666;
+  color: rgb(37, 37, 37);
 }
 
-nav ul li a:hover {
-  color: #ddd;
+nav a:hover,
+.high {
+  color: rgb(155, 149, 149);
 }
 
 /* Body Content */
@@ -44,7 +54,6 @@ nav ul li a:hover {
 body,
 html {
   height: 100%;
-  margin: 0;
   font-size: 16px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -61,55 +70,64 @@ html {
 .pimg7,
 .pimg8,
 .pimg9,
-.pimg0 {
+.pimg10,
+.pimg11,
+.pimg12 {
   position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 95%;
 }
 
 .pimg1 {
   background-image: url("img3/GSplash.jpg");
-  min-height: 95%;
 }
+
 .pimg2 {
   background-image: url("img3/MGPortret.jpg");
-  min-height: 600px;
 }
+
 .pimg3 {
   background-image: url("img3/SnowGrzenio.jpg");
-  min-height: 600px;
 }
+
 .pimg4 {
   background-image: url("img2/MonSkok3.jpg");
-  min-height: 95%;
 }
+
 .pimg5 {
   background-image: url("img2/MonKite3.jpg");
-  min-height: 600px;
 }
+
 .pimg6 {
   background-image: url("img2/KiteSplash.jpg");
-  min-height: 600px;
 }
 
 .pimg7 {
   background-image: url("img1/My1.jpg");
-  min-height: 95%;
 }
+
 .pimg8 {
   background-image: url("img1/M1.jpg");
-  min-height: 600px;
 }
+
 .pimg9 {
   background-image: url("img1/G2.jpg");
-  min-height: 600px;
   background-position: -30px;
 }
-.pimg0 {
-  background-image: url("img1/MonKite2.jpg");
-  min-height: 600px;
+
+.pimg10 {
+  background-image: url("img1/Wanderlust.jpg");
+}
+
+.pimg11 {
+  background-image: url("img1/View.jpg");
+}
+
+.pimg12 {
+  background-image: url("img1/10.jpg");
 }
 
 .section {
@@ -120,11 +138,12 @@ html {
 .section-dark {
   background-color: #282e34;
   color: #ddd;
+  align-items: center;
 }
 
 .ptext {
   position: absolute;
-  top: 50%;
+  top: 55%;
   width: 100%;
   text-align: center;
   color: #000;
@@ -132,7 +151,7 @@ html {
   letter-spacing: 8px;
 }
 
-.ptext .border {
+.border {
   background-color: #282e34;
   color: #fff;
   padding: 20px;
@@ -200,31 +219,10 @@ main input.invalid + p {
   height: auto;
 }
 
-/* RESPONSIVE RULES*/
-
-@media screen and (max-width: 563px) {
-  header .mobile {
-    display: inline-block;
-  }
-  .pimg1 {
-    background-position: -260px 0px;
-  }
-  .pimg3 {
-    background-position: -300px 0px;
-  }
-  .pimg4,
-  .pimg5,
-  .pimg6 {
-    background-position: -450px 0px;
-  }
-
-  /*.pimg9 {
-		background-position: -100px;
-	}*/
-
-  header .desktop {
-    display: none;
-  }
+.lightwidget-widget {
+  width: 100%;
+  border: 0;
+  overflow: hidden;
 }
 
 footer {
@@ -242,3 +240,18 @@ footer a {
   border-color: #666;
   padding: 3px;
 }
+
+/* RESPONSIVE RULES*/
+
+@media screen and (max-width: 730px) {
+}
+
+/*@media screen and (max-width: 563px) {
+  header .mobile {
+    display: inline-block;
+  }
+
+  header .desktop {
+    display: none;
+  }
+}*/
