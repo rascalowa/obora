@@ -5,7 +5,7 @@ const navSlider = () => {
   // TOGGLE NAVBAR
   burger.addEventListener("click", () => {
     nav.classList.toggle("active");
-    // BURGER ICON ANIMATION
+    // BURGER ICON ANIMATE
     burger.classList.toggle("animate");
   });
 };
