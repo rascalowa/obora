@@ -244,9 +244,30 @@ footer a {
 /* RESPONSIVE RULES*/
 
 @media screen and (max-width: 730px) {
-}
+  /* NAVBAR BURGER ICON */
+  .burger {
+    padding: 20px;
+    cursor: pointer;
+  }
 
-/*@media screen and (max-width: 563px) {
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.5s ease;
+  }
+
+  .animate .l1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .animate .l2 {
+    opacity: 0;
+  }
+  .animate .l3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
   header .mobile {
     display: inline-block;
   }
@@ -254,4 +275,4 @@ footer a {
   header .desktop {
     display: none;
   }
-}*/
+}

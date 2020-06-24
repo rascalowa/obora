@@ -1,3 +1,17 @@
+// NAVBAR ON CLICK
+const burger = document.getElementsByClassName("burger");
+const navSlider = () => {
+  const nav = document.querySelector(".desktop");
+  // TOGGLE NAVBAR
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    // BURGER ICON ANIMATION
+    burger.classList.toggle("animate");
+  });
+};
+navSlider();
+
+// CONTACT FORM
 const inputs = document.querySelectorAll("input");
 
 const patterns = {
